@@ -1,0 +1,15 @@
+version: '3'
+services:
+  nodejs-app: # service name & you can give any name:
+    image: nodejs-app1 #yours image name:
+    container_name: nodejs-app
+    ports:
+      - 3001:3000 # port mapping
+    volumes:
+      - nodejs-vol:/app/
+
+
+volumes:
+  nodejs-vol:
+     
+
